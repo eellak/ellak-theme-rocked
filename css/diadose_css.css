@@ -1,0 +1,139 @@
+/*--------------------------------------------------------------
+## DIADOSE BAR STYLING tt -- BY BROMOIRAS DAVID-OCT 24 2016
+--------------------------------------------------------------*/
+@keyframes orange-extend{
+    100% {width: 1000px;}
+}
+
+@keyframes text-r-2-l-motion{
+    0% {left: 1100px}
+    100% {left: 200px}
+}
+
+
+.ellak-diadose-wrap{
+    height: 45px;
+    background-color: rgb(150, 200, 150);
+    margin: 0px;
+    padding: 0px;
+}
+
+.ellak-diadose-text-wrap :link{
+    color: white;
+    text-decoration: none;
+}
+
+.ellak-diadose-text-wrap :hover{
+    color:#ececec;
+    text-decoration: none;
+}
+
+.ellak-diadose-text-wrap :visited{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px){
+    .ellak-diadose-text-wrap{
+        font-size: 13px;
+        margin-top: -4px;
+    }
+}
+@media screen and (min-width: 376) and (max-width: 640px){
+    .ellak-diadose-text-wrap{
+        font-size: 15px;
+        margin-top: -7px;
+    }
+}
+@media screen and (min-width: 641px){
+    .ellak-diadose-text-wrap{
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+.ellak-diadose{
+    position: relative;
+}
+
+.ellak-diadose-non-text-wrap{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+}
+.ellak-diadose-logo-wrap{
+    float: left;
+    z-index: 100;
+    background-color: orange;
+}
+
+.ellak-diadose-logo-wrap  img{
+    height: 45px;
+    width: auto;
+    max-width: 60px;
+}
+
+.ellak-diadose-birds-wrap{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.ellak-diadose-orange-frame{
+    width: 20px;
+    height: 45px;
+    background-color: orange;
+    display: inline-block;
+    float: left;
+    /*        animation-name: orange-extend;
+            -webkit-animation-name: orange-extend;
+            -moz-animation-name: orange-extend;
+            animation-duration: 2.3s;
+            -webkit-animation-duration: 2.3s;
+            -moz-animation-duration: 2.3s;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-fill-mode: forwards;*/
+}
+
+.ellak-diadose-orange-frame > a {
+    width: 100%;
+}
+
+.ellak-diadose-birds{
+    display: inline-block;
+    float: left;
+    z-index: 400;
+}
+
+.ellak-diadose-birds > img{
+    height: 45px;
+    width: auto;
+    max-width: 60px;
+}
+
+.ellak-diadose-text-wrap, .ellak-diadose-text-wrap > a{
+    /*display: inline-block;*/
+    z-index: 600;
+    float: left;
+    top: 5px;
+}
+.ellak-diadose-text-wrap, .ellak-diadose-letter-wide{
+    position: relative;
+    letter-spacing: .8px;
+    color: white;
+    text-align: center;
+}
+.ellak-diadose-text-wrap{
+    left: 6000px;
+    /*animation-name: text-r-2-l-motion;
+    -webkit-animation-name: text-r-2-l-motion;
+    -moz-animation-name: text-r-2-l-motion;
+    animation-duration: 2.3s;
+    -webkit-animation-duration: 2.3s;
+    -moz-animation-duration: 2.3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;*/
+}
