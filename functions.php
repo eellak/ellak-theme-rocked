@@ -46,4 +46,3 @@ add_action('admin_bar_menu', 'ellak_remove_search_icon');
 register_nav_menus( array(
 	'usermenu' => esc_html__( 'Navigation Menu', 'rocked' ),
 ) );
-
