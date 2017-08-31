@@ -1,0 +1,7 @@
+.css-search .em-search-field select{
+	width: 100%;
+}
+
+.css-search .em-search-field select option{
+	display: block;
+}

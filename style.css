@@ -1,0 +1,305 @@
+/*
+Theme Name: Rocked ellak.gr 2017
+Theme URI: https://github.com/eellak
+Author: EELLAK
+Author URI: https://ellak.gr
+Description: Rocked is a modern and responsive business theme that provides a quick and easy way to obtain a corporate website for yourself or for your clients. Options include color control, font control, pre-defined blocks, logo and favicon upload, multiple blog layouts and much more.
+Version: 0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: rocked
+Text Domain: rocked
+Tags: light, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-colors, custom-background, custom-header, custom-menu, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Rocked is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+*/
+
+#mainnav {
+	display: none;
+}
+
+.btn-menu {
+	color: #fff;
+	padding: 5px;
+}
+
+.roll-news .entry {
+	width: 30%;
+	height: 392px;
+	float: left;
+	margin: 0 1.5%;
+}
+
+.entry-thumb img {
+	max-width: 100%;
+	height: 200px;
+}
+
+.widget_wpcom_social_media_icons_widget li a {
+	font-size: 36px;
+}
+
+.nlposts-block-container .nlposts-block-item {
+	max-width: 32%;
+	height: 400px;
+}
+
+.nlposts-block-title {
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.nlposts-block-container .nlposts-block-thumbnail-litem a > img {
+	min-width: 300px;
+	height: 220px;
+}
+
+#pg-23664-0 .panel-grid-cell {
+	padding: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+	.nlposts-block-thumbnail {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.nlposts-block-container .thumbnails > li {
+		width: 100%;
+	}
+	.nlposts-block-container .nlposts-block-item {
+		max-width: 100%;
+		height: 100%;
+	}
+	
+	.nlposts-block-container .nlposts-block-thumbnail-litem a > img {
+		min-width: 70%;
+		margin: 0 1.5%;
+		height: 100%;
+	}
+
+	#main-nav {
+	    margin: 0;
+	}
+	.nlposts-block-thumbnail {
+		padding: 0 15px;
+	}
+	.nlposts-caption {
+		text-align: center;
+	}
+	.nlposts-block-title {
+		font-size: 21px;
+	}
+}
+
+/*@media only screen and (max-width: 800px) {
+	
+	.nlposts-block-container .nlposts-block-thumbnail-litem a > img {
+		height: 100%;
+	}
+	.nlposts-block-container .nlposts-block-item {
+		height: 100%;
+	}
+}*/
+
+/* navigation */
+#main-nav {
+	display: block;
+	float: left;
+	margin: 0;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+}
+
+#main-nav ul {
+	list-style: none;
+	margin: 0;
+}
+
+#main-nav ul li {
+	float: left;
+}
+
+#main-nav ul li a {
+	display: inline-block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	color: #fff;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	transition: none;
+	transition: color .3s linear;
+}
+
+#main-nav ul li:last-child {
+	padding-right: 0;
+}
+
+#main-nav ul li {
+	position: relative;
+}
+
+#main-nav ul li ul {
+	width: 180px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	opacity: 0;
+	padding: 0;
+	margin: 0;
+	visibility: hidden;
+	box-shadow: 0 0 8px rgba(194,194,194,0.4);
+	transform: translateY(5px);
+	transition: opacity 150ms ease-out 0s, transform 150ms ease-out 0;
+}
+
+#main-nav ul li ul:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: -3px;
+	width: 100%;
+	height: 3px;
+}
+
+#main-nav ul li ul:before {
+	content: "";
+	position: absolute;
+	left: 30px;
+	top: -13px;
+	border-width: 5px;
+	border-style: solid;
+}
+
+#main-nav ul li ul li ul {
+	left: 100%;
+	top: 0;
+}
+
+#main-nav ul li ul li ul:before {
+	border-width: 0;
+}
+
+#main-nav li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+#main-nav ul ul {
+	z-index: 99999;
+}
+
+#main-nav ul ul li {
+	width: 100%;
+}
+
+#main-nav ul ul li a {
+	color: #222;
+	display: block;
+	background-color: #fff;
+	font-weight: 400;
+	padding: 8px 18px;
+	text-transform: none;
+	border-top: 1px solid #eee;
+	-webkit-transition: all .2s ease 0;
+	-moz-transition: all .2s ease 0;
+	-ms-transition: all .2s ease 0;
+	-o-transition: all .2s ease 0;
+	transition: all .2s ease 0;
+}
+
+#main-nav ul ul li:first-child a {
+	border: 0;
+}
+
+#main-nav ul ul li:hover > a {
+	color: #fff;
+}
+
+#main-nav ul li a.active,
+#main-nav ul li a:hover {
+	color: #4f4f4f;
+}
+
+#main-nav ul li ul:after {
+	background-color: #ffa800;
+}
+
+#main-nav ul li ul:before {
+	border-color: transparent transparent #ffa800;
+}
+
+#main-nav ul ul li:hover > a {
+	color: #fff;
+	background-color: #ffa800;
+}
+
+.site-footer {
+	text-align: center;
+}
+
+.bannerfoot ul li {
+	list-style-type: none;
+	float: left;
+	margin: 10px 0;
+	display: block;
+}
+
+.soc_icons {
+	display: block;
+	margin-bottom: 10px;
+	height: 40px;
+}
+
+.soc_icons ul li {
+	list-style-type: none;
+	float: left;
+	margin: 0 8px 20px 0;
+}
+.faq-title h4 {
+    margin: 0px !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+}
+
+img#wpstats {
+	display: none;
+}
+
+.btn-menu{
+	display: block;
+}
+
+
+/*
+    css for the header search form
+*/
+
+/*.search-form-wrap{
+    overflow: auto;
+}
+
+.search-form-wrap input.search-field{
+    height: 19px !important;
+}
+
+.search-form-wrap input[type="submit"]{
+    padding: 2px 40px !important;
+    background-color: #7e736a !important;
+}
+
+.search-form-float{
+    float: right;
+    margin-right: 20px;
+}*/
